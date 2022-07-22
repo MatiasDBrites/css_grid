@@ -9,8 +9,8 @@
 .grid-container {
   height: 100vh;
   display: grid;
-  grid-auto-flow: column; 
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-flow: dense; 
+  grid-template-columns: repeat(auto-fill), minmax(4, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(13, 1fr));
   grid-template-areas: 
   "header menu menu menu"
@@ -84,9 +84,4 @@
   background-color: #FFD169;
   color: black;
 }
-
-/* Responsive tablet */
-
-
-/* Responsive mobile */
 
